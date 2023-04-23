@@ -1,5 +1,6 @@
 package basics;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -18,19 +19,30 @@ public class Get_ListUsers {
 		
 Response response = given()
 		
-		.when()
+					.when()
 		
-		.get("api/users?page=2")
+					.get("api/users?page=2")
 		
-		.then()
+					.then()
 		
-		.extract()
+					.extract()
 		
-		.response();
+					.response();
 
 		String resp = response.asPrettyString();
 
-System.out.println(resp);
+		System.out.println(resp);
+		
+		
+		int statuscode = response.getStatusCode();
+		
+		System.out.println("Status code is "+statuscode);
+		
+		long timetaken = response.getTime();
+		
+		System.out.println(timetaken);
+		
+		Assert.assertEquals(statuscode, 200);
 		
 	}
 
