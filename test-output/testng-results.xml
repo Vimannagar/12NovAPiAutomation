@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-23T08:01:48 IST" name="Default suite" finished-at="2023-04-23T08:01:54 IST" duration-ms="6096">
+  <suite started-at="2023-04-24T07:54:11 IST" name="Default suite" finished-at="2023-04-24T07:54:18 IST" duration-ms="6403">
     <groups>
     </groups>
-    <test started-at="2023-04-23T08:01:48 IST" name="Default test" finished-at="2023-04-23T08:01:54 IST" duration-ms="6096">
-      <class name="basics.GetDataFromJson">
-        <test-method signature="getUsers()[pri:0, instance:basics.GetDataFromJson@4a7f959b]" started-at="2023-04-23T08:01:48 IST" name="getUsers" finished-at="2023-04-23T08:01:54 IST" duration-ms="6008" status="PASS">
+    <test started-at="2023-04-24T07:54:11 IST" name="Default test" finished-at="2023-04-24T07:54:18 IST" duration-ms="6403">
+      <class name="basics.Post_CreateUser">
+        <test-method signature="createUserOfApp()[pri:0, instance:basics.Post_CreateUser@4a7f959b]" started-at="2023-04-24T07:54:11 IST" name="createUserOfApp" finished-at="2023-04-24T07:54:18 IST" duration-ms="6301" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUsers -->
-      </class> <!-- basics.GetDataFromJson -->
+        </test-method> <!-- createUserOfApp -->
+      </class> <!-- basics.Post_CreateUser -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

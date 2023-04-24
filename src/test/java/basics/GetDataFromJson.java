@@ -44,11 +44,37 @@ Response response = given()
 		
 		System.out.println(textvalue);
 		
-		for(int i =0; i<6; i++)
+		int size = jp.getInt("data.size()");
+		
+		System.out.println("Size of data array is "+size);
+		
+		for(int i =0; i<size; i++)
 		{
 			String emailaddress = jp.getString("data["+i+"].email");
 			
 			System.out.println(emailaddress);
+		}
+		
+		
+		
+//		email for 0th index position:
+		
+		String emailof0index = jp.getString("data[0].email");
+		
+		System.out.println(emailof0index);
+		
+		
+//		Fetch lastname whose email is lindsay.ferguson@reqres.in
+		
+		for(int i=0; i<size; i++)
+		{
+			String email = jp.getString("data["+i+"].email");
+			
+			if(email.equals("lindsay.ferguson@reqres.in"))
+			{
+				String lastname = jp.getString("data["+i+"].last_name");
+				System.out.println(lastname);
+			}
 		}
 		
 		
