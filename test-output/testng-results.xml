@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-25T07:38:18 IST" name="Default suite" finished-at="2023-04-25T07:38:28 IST" duration-ms="10228">
+  <suite started-at="2023-04-26T07:46:23 IST" name="Default suite" finished-at="2023-04-26T07:46:31 IST" duration-ms="8201">
     <groups>
     </groups>
-    <test started-at="2023-04-25T07:38:18 IST" name="Default test" finished-at="2023-04-25T07:38:28 IST" duration-ms="10228">
-      <class name="basics.APIChaining">
-        <test-method signature="createUserOfApp()[pri:1, instance:basics.APIChaining@429bffaa]" started-at="2023-04-25T07:38:18 IST" name="createUserOfApp" finished-at="2023-04-25T07:38:26 IST" duration-ms="8668" status="PASS">
+    <test started-at="2023-04-26T07:46:23 IST" name="Default test" finished-at="2023-04-26T07:46:31 IST" duration-ms="8201">
+      <class name="serializationanddeserialization.CreateUser">
+        <test-method signature="createUserOfApp()[pri:1, instance:serializationanddeserialization.CreateUser@32b260fa]" started-at="2023-04-26T07:46:23 IST" name="createUserOfApp" finished-at="2023-04-26T07:46:31 IST" duration-ms="8064" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUserOfApp -->
-        <test-method signature="GetUserDetails()[pri:2, instance:basics.APIChaining@429bffaa]" started-at="2023-04-25T07:38:26 IST" name="GetUserDetails" finished-at="2023-04-25T07:38:28 IST" duration-ms="1421" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetUserDetails -->
-      </class> <!-- basics.APIChaining -->
+      </class> <!-- serializationanddeserialization.CreateUser -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
