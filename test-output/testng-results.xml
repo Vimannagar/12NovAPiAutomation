@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-29T08:03:55 IST" name="Suite" finished-at="2023-04-29T08:04:02 IST" duration-ms="6942">
+  <suite started-at="2023-04-30T07:33:41 IST" name="Suite" finished-at="2023-04-30T07:33:49 IST" duration-ms="8215">
     <groups>
     </groups>
-    <test started-at="2023-04-29T08:03:55 IST" name="Test" finished-at="2023-04-29T08:04:02 IST" duration-ms="6942">
+    <test started-at="2023-04-30T07:33:41 IST" name="Test" finished-at="2023-04-30T07:33:49 IST" duration-ms="8215">
       <class name="ecom.LoginPage">
-        <test-method signature="loginToApp()[pri:0, instance:ecom.LoginPage@57d7f8ca]" started-at="2023-04-29T08:03:56 IST" name="loginToApp" finished-at="2023-04-29T08:04:02 IST" duration-ms="6397" status="PASS">
+        <test-method signature="loginToApp()[pri:0, instance:ecom.LoginPage@fba92d3]" started-at="2023-04-30T07:33:41 IST" name="loginToApp" finished-at="2023-04-30T07:33:48 IST" duration-ms="6993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
       </class> <!-- ecom.LoginPage -->
       <class name="ecom.AddProduct">
-        <test-method signature="addProductToApp()[pri:0, instance:ecom.AddProduct@32ee6fee]" started-at="2023-04-29T08:04:02 IST" name="addProductToApp" finished-at="2023-04-29T08:04:02 IST" duration-ms="409" status="PASS">
+        <test-method signature="addProductToApp()[pri:0, instance:ecom.AddProduct@73e22a3d]" started-at="2023-04-30T07:33:48 IST" name="addProductToApp" finished-at="2023-04-30T07:33:49 IST" duration-ms="709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToApp -->
       </class> <!-- ecom.AddProduct -->
+      <class name="ecom.DeleteProduct">
+        <test-method signature="deletingProduct()[pri:0, instance:ecom.DeleteProduct@28f2a10f]" started-at="2023-04-30T07:33:49 IST" name="deletingProduct" finished-at="2023-04-30T07:33:49 IST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletingProduct -->
+      </class> <!-- ecom.DeleteProduct -->
+      <class name="ecom.PlaceOrder">
+        <test-method signature="placingOrderTest()[pri:0, instance:ecom.PlaceOrder@47faa49c]" started-at="2023-04-30T07:33:49 IST" name="placingOrderTest" finished-at="2023-04-30T07:33:49 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- placingOrderTest -->
+      </class> <!-- ecom.PlaceOrder -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

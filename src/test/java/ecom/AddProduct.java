@@ -21,6 +21,8 @@ public class AddProduct extends BaseData {
 		RestAssured.baseURI = "https://rahulshettyacademy.com/";
 		
 		Response productresp = given()
+				
+				
 		
 		.header("Authorization", token)
 		

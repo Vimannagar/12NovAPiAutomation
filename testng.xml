@@ -5,6 +5,8 @@
     <classes>
       <class name="ecom.LoginPage"/>
        <class name="ecom.AddProduct"/>
+      <class name="ecom.PlaceOrder"/>
+        <class name="ecom.DeleteProduct"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
