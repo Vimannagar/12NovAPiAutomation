@@ -2,10 +2,15 @@ package basictest;
 
 import static io.restassured.RestAssured.given;
 
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
 public class GET_Request {
@@ -17,13 +22,14 @@ public class GET_Request {
 		
 		
 Response response = given()
-					.header("x-api-key", "PMAK-649247a391dd760038ebbae5-abd594c62ed5ba176b999cf4834551477d")
+					.header("x-api-key", "PMAK-64963ca667fcb200320322ac-9a8e59a6f683d54be2b23fae86f1ab1f57")
 		
 					.when()
 		
-					.get("/workspaces/52baa379-4b6a-4992-86a3-467cd73febf9")
+					.get("/workspaces")
 		
 					.then()
+					.log().all()
 		
 					.extract()
 		
@@ -33,7 +39,24 @@ Response response = given()
 
 		System.out.println(resp);
 		
+		System.out.println(response.getStatusCode());
 		
+		System.out.println(response.getTimeIn(TimeUnit.SECONDS));
+		
+		Headers head = response.headers();
+		
+		List<Header> value = head.asList();
+		
+		Header a = value.get(0);
+		
+			System.out.println(a.getName()+" "+a.getValue());
+			
+			
+			System.out.println("****************************");
+			
+		
+			
+			
 		
 		
 	}

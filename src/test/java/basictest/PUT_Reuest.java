@@ -16,21 +16,20 @@ public class PUT_Reuest {
 		
 		
 Response response = given()
-					.header("x-api-key", "PMAK-649247a391dd760038ebbae5-abd594c62ed5ba176b999cf4834551477d")
+					.header("x-api-key", "PMAK-649247a391dd760038ebbae5-207f6011b82179ae656d83cded68e7a595")
 		
 					.body("{\r\n"
 							+ "    \"workspace\": {\r\n"
-							+ "        \"id\": \"8e12339e-b561-4326-90db-29384205056e\",\r\n"
-							+ "        \"name\": \"My Workspace\",\r\n"
+							+ "        \"name\": \"My Workspace teen\",\r\n"
 							+ "        \"type\": \"team\",\r\n"
-							+ "        \"description\": \"This is test api workspace FOUR\"\r\n"
+							+ "        \"description\": \"This is test api workspace three\"\r\n"
 							+ "         \r\n"
 							+ "\r\n"
 							+ "    }\r\n"
 							+ "}")
 					.when()
 		
-					.put("/workspaces/8e12339e-b561-4326-90db-29384205056e")
+					.put("/workspaces/9fd6ef95-ed36-4c52-9ba2-309797345b8c")
 		
 					.then()
 		
