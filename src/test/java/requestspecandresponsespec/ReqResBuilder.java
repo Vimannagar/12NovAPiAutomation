@@ -8,7 +8,6 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.LogDetail;

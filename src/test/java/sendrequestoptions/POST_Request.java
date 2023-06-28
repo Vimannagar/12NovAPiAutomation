@@ -63,7 +63,9 @@ public class POST_Request {
 		jsonObject.add(obj5001);
 		jsonObject.add(obj5002);
 		
-		given(requestspecification)
+		given()
+		
+		.spec(requestspecification)
 		
 		.body(jsonObject)
 		
