@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="hamcrestassertions.GetAllWorkspaces">
+      <class name="requestspecandresponsespec.ReqResBuilder">
         <methods>
+          <include name="prerequisite"/>
           <include name="getUsers"/>
         </methods>
-      </class> <!-- hamcrestassertions.GetAllWorkspaces -->
+      </class> <!-- requestspecandresponsespec.ReqResBuilder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

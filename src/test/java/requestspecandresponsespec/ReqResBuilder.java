@@ -30,13 +30,13 @@ public class ReqResBuilder {
 		RequestSpecBuilder requestspecbuilder = new RequestSpecBuilder();
 		
 		requestspecbuilder.setBaseUri("https://api.postman.com");
-		requestspecbuilder.addHeader("x-api-key", "api-key");
+		requestspecbuilder.addHeader("x-api-key", "PMAK-649a38d12ccb0d002bc7c802-8bb60dc400918c621be95feec8dc14070f");
 		requestspecbuilder.log(LogDetail.ALL);
 		requestspecification = requestspecbuilder.build();
 		
 		
 		ResponseSpecBuilder responsespecbuilder = new ResponseSpecBuilder()
-		.expectStatusCode(200)
+		.expectStatusCode(201)
 		.expectContentType(ContentType.JSON)
 		.log(LogDetail.ALL);
 		
