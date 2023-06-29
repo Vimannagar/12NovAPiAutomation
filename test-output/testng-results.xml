@@ -2,20 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-28T08:34:58 IST" name="Default suite" finished-at="2023-06-28T08:35:03 IST" duration-ms="5427">
+  <suite started-at="2023-06-29T09:11:37 IST" name="Default suite" finished-at="2023-06-29T09:11:42 IST" duration-ms="4593">
     <groups>
     </groups>
-    <test started-at="2023-06-28T08:34:58 IST" name="Default test" finished-at="2023-06-28T08:35:03 IST" duration-ms="5427">
-      <class name="sendrequestoptions.POST_Request">
-        <test-method is-config="true" signature="prerequisite()[pri:0, instance:sendrequestoptions.POST_Request@316bcf94]" started-at="2023-06-28T08:34:58 IST" name="prerequisite" finished-at="2023-06-28T08:34:59 IST" duration-ms="1159" status="PASS">
+    <test started-at="2023-06-29T09:11:37 IST" name="Default test" finished-at="2023-06-29T09:11:42 IST" duration-ms="4593">
+      <class name="parameters.QueryParamUsingActual">
+        <test-method signature="getUsers()[pri:0, instance:parameters.QueryParamUsingActual@7205765b]" started-at="2023-06-29T09:11:37 IST" name="getUsers" finished-at="2023-06-29T09:11:42 IST" duration-ms="4498" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- prerequisite -->
-        <test-method signature="sendPostReq()[pri:0, instance:sendrequestoptions.POST_Request@316bcf94]" started-at="2023-06-28T08:34:59 IST" name="sendPostReq" finished-at="2023-06-28T08:35:03 IST" duration-ms="4182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendPostReq -->
-      </class> <!-- sendrequestoptions.POST_Request -->
+        </test-method> <!-- getUsers -->
+      </class> <!-- parameters.QueryParamUsingActual -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
