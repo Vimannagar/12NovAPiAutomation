@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="requestspecandresponsespec.ReqResBuilder">
+      <class name="authenticationschemes.Form_Authentication_POST">
         <methods>
-          <include name="prerequisite"/>
-          <include name="getUsers"/>
+          <include name="beforeClass"/>
+          <include name="loginToApp"/>
         </methods>
-      </class> <!-- requestspecandresponsespec.ReqResBuilder -->
+      </class> <!-- authenticationschemes.Form_Authentication_POST -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
