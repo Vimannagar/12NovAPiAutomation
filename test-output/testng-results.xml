@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-05T23:49:32 IST" name="Default suite" finished-at="2023-07-05T23:49:36 IST" duration-ms="4388">
+  <suite started-at="2023-07-07T06:42:24 IST" name="Default suite" finished-at="2023-07-07T06:42:29 IST" duration-ms="4713">
     <groups>
     </groups>
-    <test started-at="2023-07-05T23:49:32 IST" name="Default test" finished-at="2023-07-05T23:49:36 IST" duration-ms="4388">
-      <class name="spotifyapis.CreatePlaylist">
-        <test-method is-config="true" signature="reqResSpec()[pri:0, instance:spotifyapis.CreatePlaylist@316bcf94]" started-at="2023-07-05T23:49:32 IST" name="reqResSpec" finished-at="2023-07-05T23:49:33 IST" duration-ms="1268" status="PASS">
+    <test started-at="2023-07-07T06:42:24 IST" name="Default test" finished-at="2023-07-07T06:42:29 IST" duration-ms="4713">
+      <class name="spotifyapis.GET_PlayList">
+        <test-method signature="fetchUserID()[pri:1, instance:spotifyapis.GET_PlayList@47987356]" started-at="2023-07-07T06:42:24 IST" name="fetchUserID" finished-at="2023-07-07T06:42:28 IST" duration-ms="4080" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- reqResSpec -->
-        <test-method signature="createPlayList()[pri:0, instance:spotifyapis.CreatePlaylist@316bcf94]" started-at="2023-07-05T23:49:33 IST" name="createPlayList" finished-at="2023-07-05T23:49:36 IST" duration-ms="3029" status="PASS">
+        </test-method> <!-- fetchUserID -->
+        <test-method signature="GetAPlaylist()[pri:2, instance:spotifyapis.GET_PlayList@47987356]" started-at="2023-07-07T06:42:29 IST" name="GetAPlaylist" finished-at="2023-07-07T06:42:29 IST" duration-ms="533" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPlayList -->
-      </class> <!-- spotifyapis.CreatePlaylist -->
+        </test-method> <!-- GetAPlaylist -->
+      </class> <!-- spotifyapis.GET_PlayList -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

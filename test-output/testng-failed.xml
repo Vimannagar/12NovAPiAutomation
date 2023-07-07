@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="authenticationschemes.Form_Authentication_POST">
+      <class name="spotifyapis.PUT_UpdatePlayList">
         <methods>
-          <include name="beforeClass"/>
-          <include name="loginToApp"/>
+          <include name="updateAPlayList"/>
         </methods>
-      </class> <!-- authenticationschemes.Form_Authentication_POST -->
+      </class> <!-- spotifyapis.PUT_UpdatePlayList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
