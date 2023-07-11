@@ -1,10 +1,15 @@
-package spotifyapis;
-
+package com.spotify.oath2.tests;
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.spotify.oath2.pojo.PlayList;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -40,12 +45,12 @@ public class CreatePlaylist {
 	@Test
 	public void createPlayList()
 	{
-		given(requestSpecification)
-		.body("{\r\n"
-				+ "    \"name\": \"Deshbhakti songs playlist\",\r\n"
-				+ "    \"description\": \" songs playlist\",\r\n"
-				+ "    \"public\": false\r\n"
-				+ "}")
+		PlayList requestplaylist = new PlayList();
+		requestplaylist.setName("Deshbhakti songs playlist");
+		requestplaylist.setDescription("collection of Deshbhakti songs");
+		requestplaylist.setPublic(false);
+		PlayList response = given(requestSpecification)
+		.body(requestplaylist)
 		.when()
 		.log().all()
 		
@@ -53,8 +58,14 @@ public class CreatePlaylist {
 		
 		.then()
 		.log().all()
+		.extract()
 		
-		.body("name", equalTo("Melody songs playlist"));
+		.response()
+		.as(PlayList.class);
+		
+		
+		
+		Assert.assertEquals(response.getName(), requestplaylist.getName());
 		
 	}
 

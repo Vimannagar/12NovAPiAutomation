@@ -16,7 +16,7 @@ public class CreateUser {
 	{
 		RequestBody requestbody = new RequestBody();
 		
-		requestbody.setId(0);
+		
 		requestbody.setUsername("novserialize");
 		requestbody.setFirstName("Serialization");
 		requestbody.setLastName("NovBatch");

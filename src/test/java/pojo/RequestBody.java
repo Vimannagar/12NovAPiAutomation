@@ -1,9 +1,12 @@
 package pojo;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class RequestBody {
 	
 //	POJO class
-	int id;
+	String id;
 	String username;
 	String firstName;
 	String lastName;
@@ -12,10 +15,10 @@ public class RequestBody {
 	String phone;
 	int userStatus;
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getUsername() {
