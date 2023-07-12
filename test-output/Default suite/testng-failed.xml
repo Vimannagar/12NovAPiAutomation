@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="spotifyapis.CreatePlaylist">
+      <class name="com.spotify.oath2.testsframework.CreatePlaylist">
         <methods>
-          <include name="reqResSpec"/>
-          <include name="createPlayList"/>
+          <include name="GetAPlaylist"/>
         </methods>
-      </class> <!-- spotifyapis.CreatePlaylist -->
+      </class> <!-- com.spotify.oath2.testsframework.CreatePlaylist -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

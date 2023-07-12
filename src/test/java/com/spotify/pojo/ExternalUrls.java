@@ -1,5 +1,5 @@
 
-package com.spotify.oath2.pojo;
+package com.spotify.pojo;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -8,18 +8,17 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 
-
 public class ExternalUrls {
 
-    
+    @JsonProperty("spotify")
     private String spotify;
 
-  
+    @JsonProperty("spotify")
     public String getSpotify() {
         return spotify;
     }
 
-   
+    @JsonProperty("spotify")
     public void setSpotify(String spotify) {
         this.spotify = spotify;
     }

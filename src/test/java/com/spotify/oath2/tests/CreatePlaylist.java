@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.spotify.oath2.pojo.PlayList;
+import com.spotify.pojo.PlayList;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -29,7 +29,7 @@ public class CreatePlaylist {
 		requestSpecBuilder.setBaseUri("https://api.spotify.com");
 		requestSpecBuilder.setBasePath("/v1/users");
 		requestSpecBuilder.setContentType(ContentType.JSON);
-		requestSpecBuilder.addHeader("Authorization", "Bearer BQDjTZ8rBN3NFcZmNGKCVx7GLMTDEsRaqzHtIAODSrgLENWMQwskbRyF9Ys8u-5OJo37RBM8OacWYkzFSVgVqRNONpNGwDKja0gSyaSpLjtyk7wICadu73daGy3_cp9hnjcowH30d0rI3f9rMA4or--qt48oPzDqDoF43GKJ_gWpHgazQAN0UK5CdETQ60Ry10As6xkCmaUq0Z7WaH65CnVDKlyykht5ovf4X13_heimJTet-OZZrZSFWxI60F9H8Axz0S5ZQcwtaiZC");
+		requestSpecBuilder.addHeader("Authorization", "Bearer BQAgHL0p2yZE0FpaIISj9_XiBFtgVXtT59FW770xHClxpUFWYzLVrchcA9rqvEbEhbGEDgMLUHcJTXVnua6gVrbkwM3f8A5FJ1voC2B-ij_NwKvrzHrviJph1MBiMBLpQLNITcr4g2kkm8R1wz-Oz3DjlOvKzyazLH0toCRa9sNORneKy3SdSoboxjBWKWovi0IhIb_fK2iZ4kD_ch5DkoIQ96EE_JbJ-KDRo0ajM8e0t0K9LT-W_JMKTl3TfbDhsl_7siH_oQ2WxIsM");
 		
 		requestSpecification = requestSpecBuilder.build();
 		
@@ -46,8 +46,8 @@ public class CreatePlaylist {
 	public void createPlayList()
 	{
 		PlayList requestplaylist = new PlayList();
-		requestplaylist.setName("Deshbhakti songs playlist");
-		requestplaylist.setDescription("collection of Deshbhakti songs");
+		requestplaylist.setName("Bal kilkari songs playlist");
+		requestplaylist.setDescription("collection of baby songs");
 		requestplaylist.setPublic(false);
 		PlayList response = given(requestSpecification)
 		.body(requestplaylist)
