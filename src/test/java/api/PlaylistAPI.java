@@ -8,15 +8,14 @@ import io.restassured.response.Response;
 
 public class PlaylistAPI {
 
-	public static Response post(PlayList requestplaylist)
+	public static Response post(PlayList requestplaylist, String token)
 	{
 		
 		return given(SpecBuilder.getReqSpec())
-				
-		.body(requestplaylist)
+				.header("Authorization", "Bearer "+token)
+				.body(requestplaylist)
 		.when()
-	
-		
+			
 		.post("/v1/users/31h7vhk7of7iiimi6yw72ywxpwbe/playlists")
 		
 		.then()
@@ -28,11 +27,11 @@ public class PlaylistAPI {
 	}
 	
 	
-	public static Response get(String playlistID)
+	public static Response get(String playlistID, String token)
 	{
 			
 		return given(SpecBuilder.getReqSpec())
-				
+				.header("Authorization", "Bearer "+token)
 		.when()
 		
 		.get("v1/playlists/"+playlistID)
@@ -48,6 +47,30 @@ public class PlaylistAPI {
 		
 		
 	}
+	
+
+	public static Response update(String playlistID,PlayList requestplaylist, String token )
+	{
+			
+		return given(SpecBuilder.getReqSpec())
+			.header("Authorization", "Bearer "+token)
+		.when()
+		
+		.body(requestplaylist)
+		
+		.put("v1/playlists/"+playlistID)
+		
+		.then()
+		
+		.extract()
+		
+		.response();
+		
+		
+		
+	}
+	
+	
 	
 	
 	
