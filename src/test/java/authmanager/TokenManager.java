@@ -2,6 +2,7 @@ package authmanager;
 
 import java.util.HashMap;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -25,6 +26,8 @@ public class TokenManager {
 		.contentType(ContentType.URLENC)
 		
 		.formParams(param)
+		
+		
 		
 		.when()
 		

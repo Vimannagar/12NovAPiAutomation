@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-12T11:29:14 IST" name="Default suite" finished-at="2023-07-12T11:29:21 IST" duration-ms="7040">
+  <suite started-at="2023-07-14T06:42:14 IST" name="Default suite" finished-at="2023-07-14T06:42:27 IST" duration-ms="13450">
     <groups>
     </groups>
-    <test started-at="2023-07-12T11:29:14 IST" name="Default test" finished-at="2023-07-12T11:29:21 IST" duration-ms="7040">
+    <test started-at="2023-07-14T06:42:14 IST" name="Default test" finished-at="2023-07-14T06:42:27 IST" duration-ms="13450">
       <class name="com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls">
-        <test-method signature="createPlayList()[pri:1, instance:com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls@649bec2e]" started-at="2023-07-12T11:29:14 IST" name="createPlayList" finished-at="2023-07-12T11:29:20 IST" duration-ms="5843" status="PASS">
+        <test-method signature="createPlayList()[pri:1, instance:com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls@7baf6acf]" started-at="2023-07-14T06:42:14 IST" name="createPlayList" description="Creation of playlist" finished-at="2023-07-14T06:42:26 IST" duration-ms="11817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPlayList -->
-        <test-method signature="updatePlaylist()[pri:2, instance:com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls@649bec2e]" started-at="2023-07-12T11:29:20 IST" name="updatePlaylist" finished-at="2023-07-12T11:29:21 IST" duration-ms="554" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatePlaylist -->
-        <test-method signature="GetAPlaylist()[pri:3, instance:com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls@649bec2e]" started-at="2023-07-12T11:29:21 IST" name="GetAPlaylist" finished-at="2023-07-12T11:29:21 IST" duration-ms="564" status="PASS">
+        <test-method signature="GetAPlaylist()[pri:2, instance:com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls@7baf6acf]" started-at="2023-07-14T06:42:26 IST" name="GetAPlaylist" description="fetch the information of created playlist" finished-at="2023-07-14T06:42:27 IST" duration-ms="663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetAPlaylist -->
+        <test-method signature="updatePlaylist()[pri:3, instance:com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls@7baf6acf]" started-at="2023-07-14T06:42:27 IST" name="updatePlaylist" description="Updation of created playlist" finished-at="2023-07-14T06:42:27 IST" duration-ms="596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePlaylist -->
       </class> <!-- com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

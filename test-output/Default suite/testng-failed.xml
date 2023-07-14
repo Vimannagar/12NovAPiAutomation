@@ -5,7 +5,7 @@
     <classes>
       <class name="com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls">
         <methods>
-          <include name="createPlayList"/>
+          <include name="updatePlaylist"/>
         </methods>
       </class> <!-- com.spotify.oath2.testsframework.PlaylistAllAPIWithReusableCalls -->
     </classes>
